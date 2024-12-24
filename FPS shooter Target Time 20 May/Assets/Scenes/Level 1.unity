@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 264de79626f956147ae8662031449159, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 298d2a914d2a2874083af33abef886d3, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -316,14 +316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ac0f8b0d41b1c4ebda1a802ce472c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseGameObject: {fileID: 1764520689}
-  PlayUI: {fileID: 1952661009}
-  MissionExit: {fileID: 717380848}
-  MissionFailPanel: {fileID: 1992285333}
-  healthSlider: {fileID: 1364828514}
-  missionCompleted: {fileID: 184743049}
-  missionFailUIs: {fileID: 768559903}
-  player: {fileID: 0}
 --- !u!43 &62223422
 Mesh:
   m_ObjectHideFlags: 0
@@ -2398,7 +2390,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340587481}
-  - component: {fileID: 340587480}
   m_Layer: 0
   m_Name: Mission1Handle
   m_TagString: Untagged
@@ -2406,25 +2397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &340587480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340587479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7ec02aef68f5246836ac594fa49a7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2670974494082134935, guid: 1b87e5b60758e1a458935c720349d62d, type: 3}
-  spawnPoints:
-  - {fileID: 1934936811}
-  - {fileID: 1437591832}
-  - {fileID: 646870107}
-  - {fileID: 274933921}
-  totalNumberOfEnemies: 0
 --- !u!4 &340587481
 Transform:
   m_ObjectHideFlags: 0
@@ -10855,43 +10827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32f3d0ce524d6946b49e0ee6b30b958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customClassForAudio:
-  - audioName: Pistol
-    Volume: 1
-    loop: 0
-    priorityOverSounds: 128
-    pitchOrSpeed: -1
-    spatialBlend: 0.9
-    playOnAwake: 0
-    audioClip: {fileID: 8300000, guid: d9e07ba8c5f950240b198f214ab45d48, type: 3}
-    audioSource: {fileID: 0}
-  - audioName: Assault
-    Volume: 1
-    loop: 0
-    priorityOverSounds: 128
-    pitchOrSpeed: 1.83
-    spatialBlend: 0.506
-    playOnAwake: 0
-    audioClip: {fileID: 8300000, guid: 336e7497ce2376a4ab3814d6f895f61d, type: 3}
-    audioSource: {fileID: 0}
-  - audioName: Reload
-    Volume: 1
-    loop: 0
-    priorityOverSounds: 128
-    pitchOrSpeed: 1.83
-    spatialBlend: 0.506
-    playOnAwake: 0
-    audioClip: {fileID: 8300000, guid: 1917326b5d6ca18488f64c0aa8b4cff0, type: 3}
-    audioSource: {fileID: 0}
-  - audioName: AUG
-    Volume: 1
-    loop: 0
-    priorityOverSounds: 128
-    pitchOrSpeed: 1.83
-    spatialBlend: 0.506
-    playOnAwake: 0
-    audioClip: {fileID: 8300000, guid: cb68c18afb589c347bfb07b9e9831f2b, type: 3}
-    audioSource: {fileID: 0}
 --- !u!4 &1693102989
 Transform:
   m_ObjectHideFlags: 0
@@ -13067,6 +13002,37 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &2032129820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032129821}
+  m_Layer: 0
+  m_Name: AdsTry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032129821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032129820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.198817, y: 4.1996865, z: 10.665582}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059748352
 GameObject:
   m_ObjectHideFlags: 0
@@ -27580,3 +27546,4 @@ SceneRoots:
   - {fileID: 750233252}
   - {fileID: 1660454061}
   - {fileID: 340587481}
+  - {fileID: 2032129821}
